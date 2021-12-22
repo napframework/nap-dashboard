@@ -1,6 +1,23 @@
 {
   "name": "nap-dashboard",
   "version": "0.0.0",
+  "description": "NAP Dashboard uses the NAP Portal module to generate a ready-made control interface for you NAP application",
+  "keywords": [
+    "nap",
+    "framework",
+    "dashboard",
+    "portal"
+  ],
+  "homepage": "https://github.com/napframework/nap-dashboard#readme",
+  "bugs": {
+    "url": "https://github.com/napframework/nap-dashboard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/napframework/nap-dashboard.git"
+  },
+  "license": "ISC",
+  "author": "NAP Labs",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
