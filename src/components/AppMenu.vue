@@ -1,12 +1,16 @@
 <template>
   <div id="app-menu">
 
-    <router-link to="/">
+    <router-link to="/" class="logo">
       <img alt="NAP logo" src="../assets/logo.png" />
     </router-link>
 
     <router-link to="/portal-component">
       Portal Component
+    </router-link>
+
+    <router-link to="/portal-component2">
+      Portal Component 2
     </router-link>
 
   </div>
@@ -16,19 +20,23 @@
 #app-menu {
   display: flex;
   align-items: flex-end;
-  border-bottom: solid 1px #ffffff;
+  padding: 18px;
+  gap: 18px
 }
-a {
-  color: white;
+a:not(.logo) {
+  color: #ffffff;
   padding: 12px;
+  border-radius: 18px;
+  border: 1px solid #ffffff;
   white-space: nowrap;
   text-decoration: none;
 }
-a:hover,
-a.router-link-active {
-  color: #c86969;
+a:not(.logo):hover,
+a:not(.logo).router-link-active {
+  color: #000000;
+  background: #ffffff;
 }
-img {
-  height: 48px;
+a.logo img {
+  height: 64px;
 }
 </style>
