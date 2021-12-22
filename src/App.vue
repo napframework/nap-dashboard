@@ -19,6 +19,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 #page {
-  padding: 24px;
+  padding: 48px;
 }
 </style>
