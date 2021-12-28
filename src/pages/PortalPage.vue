@@ -47,3 +47,17 @@ onBeforeUnmount(() => {
     <div ref="portal"></div>
   </div>
 </template>
+
+<style>
+table {
+  white-space: nowrap;
+  border-spacing: 0 12px;
+}
+td:first-child {
+  padding: 0 24px 0 0;
+}
+input[type="range"] {
+  width: 240px;
+  margin: 0 12px 0 0;
+}
+</style>
