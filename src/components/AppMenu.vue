@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import napConfig from '../../nap.config';
+</script>
+
 <template>
   <div id="app-menu">
 
@@ -5,12 +9,8 @@
       <img alt="NAP logo" src="../assets/logo.png" />
     </router-link>
 
-    <router-link to="/portal-component">
-      Portal Component
-    </router-link>
-
-    <router-link to="/portal-component2">
-      Portal Component 2
+    <router-link v-for="portal in napConfig.portals" :to="`/${portal.path}`">
+      {{ portal.name }}
     </router-link>
 
   </div>
