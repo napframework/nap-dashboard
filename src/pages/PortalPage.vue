@@ -8,6 +8,9 @@ import {
   onMounted,
   onBeforeUnmount,
 } from 'vue';
+import {
+  onBeforeRouteUpdate,
+} from 'vue-router';
 
 // Define props
 const props = defineProps({
@@ -30,6 +33,10 @@ onMounted(() => {
       napWebSocket: props.napWebSocket!,
     });
   }
+});
+
+onBeforeRouteUpdate(to => {
+  const portalPath = to.params.portal;
 });
 
 // Destroy portal on unmount
