@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import napConfig from '../../nap.config';
 import {
   NAPPortal,
   NAPWebSocket,
@@ -35,8 +36,24 @@ onMounted(() => {
   }
 });
 
-onBeforeRouteUpdate(to => {
+onBeforeRouteUpdate((to, from, next) => {
   const portalPath = to.params.portal;
+  const portalConfig = napConfig.portals.find(p => p.path === portalPath);
+  if (!portalConfig) {
+    next(new Error('Portal not found'));
+    return;
+  }
+
+  if (napPortal !== null)
+    napPortal.destroy();
+
+  napPortal = new NAPPortal({
+    el: portal.value!,
+    portalId: portalConfig.id,
+    napWebSocket: props.napWebSocket!,
+  });
+
+  next();
 });
 
 // Destroy portal on unmount
