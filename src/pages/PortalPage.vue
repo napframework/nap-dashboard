@@ -42,10 +42,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div>
-    Welcome to your NAP portal!
-    <div ref="portal"></div>
-  </div>
+  <div ref="portal"></div>
 </template>
 
 <style>
