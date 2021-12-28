@@ -10,6 +10,8 @@ import {
   onBeforeUnmount,
 } from 'vue';
 import {
+  useRoute,
+  useRouter,
   onBeforeRouteUpdate,
 } from 'vue-router';
 
@@ -25,24 +27,11 @@ defineExpose({ portal });
 // NAPPortal variable
 let napPortal: NAPPortal | null = null;
 
-// Create portal on mount
-onMounted(() => {
-  if (napPortal === null) {
-    napPortal = new NAPPortal({
-      el: portal.value!,
-      portalId: 'PortalComponent',
-      napWebSocket: props.napWebSocket!,
-    });
-  }
-});
-
-onBeforeRouteUpdate((to, from, next) => {
-  const portalPath = to.params.portal;
-  const portalConfig = napConfig.portals.find(p => p.path === portalPath);
-  if (!portalConfig) {
-    next(new Error('Portal not found'));
-    return;
-  }
+// Set portal from router path
+function setPortal(path: string): boolean {
+  const portalConfig = napConfig.portals.find(p => p.path === path);
+  if (!portalConfig)
+    return false;
 
   if (napPortal !== null)
     napPortal.destroy();
@@ -53,7 +42,19 @@ onBeforeRouteUpdate((to, from, next) => {
     napWebSocket: props.napWebSocket!,
   });
 
-  next();
+  return true;
+}
+
+// Create portal on mount
+onMounted(() => {
+  if (!setPortal(useRoute().params.portal as string))
+    useRouter().push('/');
+});
+
+// Update portal on route change
+onBeforeRouteUpdate(to => {
+  if (!setPortal(to.params.portal as string))
+    useRouter().push('/');
 });
 
 // Destroy portal on unmount
