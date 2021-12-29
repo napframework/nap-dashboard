@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import napConfig from '../../nap.config';
+// External Includes
 import {
   NAPPortal,
   NAPWebSocket,
@@ -14,6 +14,9 @@ import {
   useRouter,
   onBeforeRouteUpdate,
 } from 'vue-router';
+
+// Local Includes
+import napConfig from '../../nap.config';
 
 // Define props
 const props = defineProps({

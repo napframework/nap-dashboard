@@ -1,3 +1,4 @@
+// External Includes
 import { NAPWebSocket } from 'nap-portal';
 import { createApp } from 'vue';
 import {
@@ -5,6 +6,7 @@ import {
   createWebHistory,
 } from 'vue-router';
 
+// Local Includes
 import App from './App.vue';
 import HomePage from './pages/HomePage.vue';
 import PortalPage from './pages/PortalPage.vue';
