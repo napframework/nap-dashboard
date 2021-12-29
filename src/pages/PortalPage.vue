@@ -19,9 +19,9 @@ import {
 import napConfig from '../../nap.config';
 
 // Define props
-const props = defineProps({
+const props = defineProps<{
   napWebSocket: NAPWebSocket,
-});
+}>();
 
 // Expose portal element
 const portal = ref(null);
@@ -42,7 +42,7 @@ function setPortal(path: string): boolean {
   napPortal = new NAPPortal({
     el: portal.value!,
     portalId: portalConfig.id,
-    napWebSocket: props.napWebSocket!,
+    napWebSocket: props.napWebSocket,
   });
 
   return true;
@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
   <div ref="portal"></div>
 </template>
 
-<style>
+<style scoped>
 table {
   white-space: nowrap;
   border-spacing: 0 12px;
