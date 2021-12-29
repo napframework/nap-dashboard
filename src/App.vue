@@ -10,6 +10,7 @@ import AppMenu from './components/AppMenu.vue';
 <style>
 body {
   margin: 0;
+  padding: 0;
   color: #ffffff;
   background: #000000;
 }
