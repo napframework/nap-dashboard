@@ -81,8 +81,8 @@ table {
 td:first-child {
   padding: 0 24px 0 0;
 }
->>> textarea,
->>> input[type="range"] {
+:deep(textarea),
+:deep(input[type="range"]) {
   width: 240px;
   margin: 0 12px 0 0;
 }
