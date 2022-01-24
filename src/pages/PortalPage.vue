@@ -81,7 +81,8 @@ table {
 td:first-child {
   padding: 0 24px 0 0;
 }
-input[type="range"] {
+>>> textarea,
+>>> input[type="range"] {
   width: 240px;
   margin: 0 12px 0 0;
 }
