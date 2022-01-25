@@ -37,4 +37,4 @@ const router = createRouter({
 });
 
 // Create Vue App
-createApp(App).use(router).mount('#app');
+createApp(App, { napWebSocket }).use(router).mount('#app');

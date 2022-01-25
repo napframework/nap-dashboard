@@ -1,9 +1,18 @@
 <script setup lang="ts">
+// External Includes
+import { NAPWebSocket } from 'nap-portal';
+
+// Local Includes
 import AppMenu from './components/AppMenu.vue';
+
+// Define props
+const props = defineProps<{
+  napWebSocket: NAPWebSocket,
+}>();
 </script>
 
 <template>
-  <AppMenu />
+  <AppMenu :nap-web-socket="props.napWebSocket" />
   <router-view id="page"></router-view>
 </template>
 
