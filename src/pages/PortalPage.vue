@@ -78,6 +78,9 @@ onBeforeUnmount(() => {
   white-space: nowrap;
   border-spacing: 0 12px;
 }
+:deep(td) {
+  vertical-align: top;
+}
 :deep(td:first-child) {
   padding-right: 24px;
 }
