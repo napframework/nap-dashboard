@@ -7,18 +7,13 @@ import {
 } from 'vue-router';
 
 // Local Includes
+import napConfig from '../nap.config';
 import App from './App.vue';
 import HomePage from './pages/HomePage.vue';
 import PortalPage from './pages/PortalPage.vue';
 
 // Create NAPWebSocket connection
-const napWebSocket = new NAPWebSocket({
-  host: 'localhost',
-  port: 2000,
-  user: 'napuser',
-  pass: 'letmein!',
-  secure: false,
-});
+const napWebSocket = new NAPWebSocket(napConfig.socket);
 
 // Open NAPWebSocket connection
 napWebSocket.open()
