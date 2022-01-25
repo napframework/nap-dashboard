@@ -74,16 +74,22 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-table {
+:deep(table) {
   white-space: nowrap;
   border-spacing: 0 12px;
 }
-td:first-child {
-  padding: 0 24px 0 0;
+:deep(td:first-child) {
+  padding-right: 24px;
 }
 :deep(textarea),
+:deep(input[type="text"]),
 :deep(input[type="range"]) {
   width: 240px;
+}
+:deep(input[type="number"]) {
+  width: 80px;
+}
+:deep(input[type="range"]) {
   margin: 0 12px 0 0;
 }
 </style>
