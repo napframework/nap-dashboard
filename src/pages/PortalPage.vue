@@ -80,9 +80,10 @@ onBeforeUnmount(() => {
 }
 :deep(td) {
   vertical-align: top;
-}
-:deep(td:first-child) {
   padding-right: 24px;
+}
+:deep(td:last-child) {
+  padding-right: 0;
 }
 :deep(textarea),
 :deep(input[type="text"]),
