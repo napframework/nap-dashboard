@@ -76,9 +76,10 @@ onBeforeUnmount(() => {
 <style scoped>
 :deep(table) {
   white-space: nowrap;
-  border-spacing: 0 12px;
+  border-spacing: 0;
 }
 :deep(td) {
+  height: 40px;
   padding-right: 24px;
 }
 :deep(td:last-child) {
@@ -89,7 +90,8 @@ onBeforeUnmount(() => {
 :deep(input[type="range"]) {
   width: 240px;
 }
-:deep(input[type="number"]) {
+:deep(input[type="number"]),
+:deep(input[type="color"]) {
   width: 80px;
 }
 :deep(input[type="range"]) {
