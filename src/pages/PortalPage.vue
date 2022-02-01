@@ -94,7 +94,4 @@ onBeforeUnmount(() => {
 :deep(input[type="color"]) {
   width: 80px;
 }
-:deep(input[type="range"]) {
-  margin: 0 12px 0 0;
-}
 </style>
