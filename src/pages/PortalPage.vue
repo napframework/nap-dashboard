@@ -79,7 +79,6 @@ onBeforeUnmount(() => {
   border-spacing: 0 12px;
 }
 :deep(td) {
-  vertical-align: top;
   padding-right: 24px;
 }
 :deep(td:last-child) {
