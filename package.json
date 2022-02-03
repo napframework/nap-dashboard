@@ -24,6 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "nap-portal": "^0.0.2",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
   },
