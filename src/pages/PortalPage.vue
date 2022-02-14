@@ -23,9 +23,8 @@ const props = defineProps<{
   napWebSocket: NAPWebSocket,
 }>();
 
-// Expose portal element
-const portal = ref(null);
-defineExpose({ portal });
+// Reference the portal DOM element
+const portal = ref<HTMLElement | null>(null);
 
 // NAPPortal variable
 let napPortal: NAPPortal | null = null;
