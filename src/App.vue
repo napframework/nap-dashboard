@@ -17,18 +17,31 @@ const props = defineProps<{
 </template>
 
 <style>
+
+@font-face {
+    font-family: 'manrope';
+    src: url('src/assets/Manrope-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  background: #000000;
+  background: #2D2D2D;
 }
+
 #app {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family:  'manrope', sans-serif;
+  color: #CDCDC3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
 }
+
 #page {
+  border-top: 4px solid;
+  border-color: #FFFFFF;
   padding: 48px;
 }
+
 </style>
