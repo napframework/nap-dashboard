@@ -77,10 +77,10 @@ onBeforeUnmount(() => {
 :deep(table) {
   white-space: nowrap;
   border-spacing: 0;
+  border: 0;
 }
 
 :deep(td) {
-  height: 40px;
   padding-right: 24px;
   vertical-align: center;
 }
@@ -91,10 +91,16 @@ onBeforeUnmount(() => {
 
 :deep(input) {
   padding: 6px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
   width: auto;
   border-style: none;
   color: #ffffff;
   background: #000000;
+  font-family: "inconsolata";
+  font-size: 0.8rem;
 }
 
 :deep(textarea),
@@ -103,9 +109,15 @@ onBeforeUnmount(() => {
   color: #ffffff;
   border-style: none;
   width: 100%;
-  padding: 6px;
   font-family: "manrope";
   font-size: 0.8rem;
+}
+
+:deep(textarea) {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  padding: 6px;
+
 }
 
 :deep(input[type="range"]) {
@@ -152,21 +164,23 @@ onBeforeUnmount(() => {
   background-color: #D6FFA3;
 }
 
-:deep(#PortalItemButton) {
+:deep(.PortalComponent button) {
   color: #ffffff;
   background: #8D8B84;
   border-style: none;
-  padding: 12px;
-  margin: 12px 0px 12px 0px;
+  padding: 6px;
+  margin: 3px 0px 3px 0px;
   font-family: "manrope";
   font-size: 1rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-:deep(#PortalItemButton):hover {
+:deep(.PortalComponent button):hover {
   background: #2958FF;
 }
 
-:deep(#PortalItemButton):active {
+:deep(.PortalComponent button):active {
   background: #CDCDC3;
 }
 

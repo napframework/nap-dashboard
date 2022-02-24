@@ -23,6 +23,11 @@ const props = defineProps<{
     src: url('src/assets/Manrope-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'inconsolata';
+    src: url('src/assets/Inconsolata-Medium.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -40,7 +45,7 @@ body {
 
 #page {
   border-top: 4px solid;
-  border-color: #FFFFFF;
+  border-color: #8D8B84;
   padding: 48px;
 }
 

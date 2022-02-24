@@ -73,7 +73,8 @@ a.logo img {
 .status {
   text-align: right;
   flex-grow: 1;
-  color: #ff0000;
+  color: #FF5050;
+  padding-top: 7px;
 }
 .status.connected {
   color: #D6FFA3;
