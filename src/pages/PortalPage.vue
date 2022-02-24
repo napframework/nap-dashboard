@@ -113,10 +113,26 @@ onBeforeUnmount(() => {
 }
 
 :deep(input[type="color"]) {
-  width: 80px;
+  width: 24px;
+  height: 24px;
   padding: 0px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #CDCDC3;
+  border-radius: 100%;
   outline: none;
+}
+
+:deep(input[type="color"])::-webkit-color-swatch-wrapper {
+  padding: 0px;
+}
+
+:deep(input[type="color"])::-webkit-color-swatch {
+  border: none;
+  border-radius: 100%;
+}
+
+:deep(input[type="color"])::-moz-color-swatch {
+  border: none;
+  border-radius: 100%;
 }
 
 :deep(input[type="number"]) {
