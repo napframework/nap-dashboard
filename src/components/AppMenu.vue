@@ -62,7 +62,10 @@ a:not(.logo) {
   white-space: nowrap;
   text-decoration: none;
 }
-a:not(.logo):hover,
+a:not(.logo):hover {
+  background: #CDCDC3;
+}
+
 a:not(.logo).router-link-active {
   background: #2958FF;
 }

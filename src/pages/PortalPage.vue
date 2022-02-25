@@ -83,6 +83,7 @@ onBeforeUnmount(() => {
 :deep(td) {
   padding-right: 24px;
   vertical-align: center;
+  font-size: 0.9rem;
 }
 
 :deep(td:last-child) {
@@ -91,8 +92,8 @@ onBeforeUnmount(() => {
 
 :deep(input) {
   padding: 6px;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  margin-bottom: 2px;
+  margin-top: 2px;
   margin-left: 0px;
   margin-right: 0px;
   width: auto;
@@ -103,6 +104,11 @@ onBeforeUnmount(() => {
   font-size: 0.8rem;
   display: block;
   outline: none
+}
+
+:deep(input)::selection {
+  color: #000000;
+  background: #8D8B84;
 }
 
 :deep(textarea),
@@ -121,6 +127,11 @@ onBeforeUnmount(() => {
   margin-bottom: 3px;
   margin-top: 3px;
   display: block;
+}
+
+:deep(textarea)::selection {
+  color: #000000;
+  background: #8D8B84;
 }
 
 :deep(input[type="range"]) {
@@ -151,6 +162,7 @@ onBeforeUnmount(() => {
 }
 
 :deep(input[type="number"]) {
+  -moz-appearance:textfield;
   width: 80px;
 }
 
@@ -159,8 +171,11 @@ onBeforeUnmount(() => {
 }
 
 :deep(input[type="checkbox"]) {
-  padding: 12px;
   appearance: none;
+  padding: 12px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: inline-table;
 }
 
 :deep(input[type="checkbox"]):checked {
@@ -174,7 +189,7 @@ onBeforeUnmount(() => {
   padding: 6px;
   margin: 3px 0px 3px 0px;
   font-family: "manrope";
-  font-size: 1rem;
+  font-size: 1.0rem;
   margin-top: 6px;
   margin-bottom: 6px;
 }

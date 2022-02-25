@@ -41,6 +41,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1em;
+  letter-spacing: 0.01em;
 }
 
 #page {
