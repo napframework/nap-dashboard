@@ -53,6 +53,7 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
   padding: 48px 48px;
   gap: 24px
 }
+
 a:not(.logo) {
   color: #ffffff;
   background: #8D8B84;
@@ -69,7 +70,9 @@ a:not(.logo).router-link-active {
 
 a.logo img {
   height: 48px;
+  padding-right: 48px;
 }
+
 .status {
   text-align: right;
   flex-grow: 1;

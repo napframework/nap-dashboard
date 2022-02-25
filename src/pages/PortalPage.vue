@@ -101,6 +101,8 @@ onBeforeUnmount(() => {
   background: #000000;
   font-family: "inconsolata";
   font-size: 0.8rem;
+  display: block;
+  outline: none
 }
 
 :deep(textarea),
@@ -111,13 +113,14 @@ onBeforeUnmount(() => {
   width: 100%;
   font-family: "manrope";
   font-size: 0.8rem;
+  padding: 3px;
+  outline: none;
 }
 
 :deep(textarea) {
   margin-bottom: 3px;
   margin-top: 3px;
-  padding: 6px;
-
+  display: block;
 }
 
 :deep(input[type="range"]) {
