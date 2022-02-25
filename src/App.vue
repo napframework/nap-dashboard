@@ -17,7 +17,6 @@ const props = defineProps<{
 </template>
 
 <style>
-
 @font-face {
     font-family: 'manrope';
     src: url('src/assets/Manrope-Regular.ttf') format('truetype');
@@ -49,5 +48,4 @@ body {
   border-color: #8D8B84;
   padding: 48px;
 }
-
 </style>

@@ -73,7 +73,6 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-
 :deep(table) {
   white-space: nowrap;
   border-spacing: 0;
@@ -92,8 +91,8 @@ onBeforeUnmount(() => {
 
 :deep(input) {
   padding: 6px;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin-bottom: 3px;
+  margin-top: 3px;
   margin-left: 0px;
   margin-right: 0px;
   width: auto;
@@ -163,7 +162,7 @@ onBeforeUnmount(() => {
 
 :deep(input[type="number"]) {
   -moz-appearance:textfield;
-  width: 80px;
+  width: 60px;
 }
 
 :deep(input[type="number"])::-webkit-inner-spin-button {
@@ -231,5 +230,4 @@ onBeforeUnmount(() => {
   border: none;
   background: transparent;
 }
-
 </style>
