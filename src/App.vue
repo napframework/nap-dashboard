@@ -2,6 +2,11 @@
 // External Includes
 import { NAPWebSocket } from 'nap-portal';
 
+// Global styles
+import './styles/fonts.css';
+import './styles/colors.css';
+import './styles/style.css';
+
 // Local Includes
 import AppMenu from './components/AppMenu.vue';
 
@@ -17,35 +22,8 @@ const props = defineProps<{
 </template>
 
 <style>
-@font-face {
-    font-family: 'manrope';
-    src: url('src/assets/Manrope-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'inconsolata';
-    src: url('src/assets/Inconsolata-Medium.ttf') format('truetype');
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  background: #2D2D2D;
-}
-
-#app {
-  font-family:  'manrope', sans-serif;
-  color: #CDCDC3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 1em;
-  letter-spacing: 0.01em;
-}
-
 #page {
-  border-top: 4px solid;
-  border-color: #8D8B84;
   padding: 48px;
+  border-top: 4px solid var(--gray-medium);
 }
 </style>
