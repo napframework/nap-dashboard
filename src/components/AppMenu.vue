@@ -8,6 +8,7 @@ import {
 
 // Local Includes
 import napConfig from '../../nap.config';
+import LogoSvg from '../assets/logo.svg?component';
 
 // Define props
 const props = defineProps<{
@@ -32,7 +33,7 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
   <div id="app-menu">
 
     <router-link to="/" class="logo">
-      <img alt="NAP logo" src="../assets/logo.svg" />
+      <LogoSvg width="auto" height="3rem" />
     </router-link>
 
     <router-link v-for="portal in napConfig.portals" :to="`/${portal.path}`">
