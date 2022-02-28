@@ -35,28 +35,3 @@ html {
 ::selection {
   background-color: var(--pink);
 }
-
-a {
-  position: relative;
-  text-decoration: none;
-  color: var(--gray-light);
-}
-
-a:hover {
-  color: var(--blue);
-}
-
-a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-color: var(--gray-light);
-}
-
-a:hover::after {
-  background-color: var(--blue);
-}
