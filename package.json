@@ -8,6 +8,9 @@
     "dashboard",
     "portal"
   ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "homepage": "https://github.com/napframework/nap-dashboard#readme",
   "bugs": {
     "url": "https://github.com/napframework/nap-dashboard/issues"
