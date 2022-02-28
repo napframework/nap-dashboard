@@ -1,0 +1,14 @@
+table {
+  white-space: nowrap;
+  border-spacing: 0;
+  border: 0;
+}
+
+td {
+  padding-right: 1.5em;
+  vertical-align: center;
+}
+
+td:last-child {
+  padding-right: 0;
+}

@@ -73,22 +73,6 @@ onBeforeUnmount(() => {
 </template>
 
 <style scoped>
-:deep(table) {
-  white-space: nowrap;
-  border-spacing: 0;
-  border: 0;
-}
-
-:deep(td) {
-  padding-right: 24px;
-  vertical-align: center;
-  font-size: 0.9rem;
-}
-
-:deep(td:last-child) {
-  padding-right: 0;
-}
-
 :deep(input) {
   padding: 6px;
   margin-bottom: 3px;
