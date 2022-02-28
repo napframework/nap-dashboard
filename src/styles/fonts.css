@@ -46,3 +46,9 @@
   src: url('/fonts/Manrope-ExtraBold.ttf') format('ttf');
   font-weight: 800;
 }
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/fonts/Inconsolata-Medium.ttf') format('ttf');
+  font-weight: 500;
+}

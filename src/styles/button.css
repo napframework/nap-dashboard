@@ -1,9 +1,10 @@
 button {
-  color: var(--white);
-  background-color: var(--gray-medium);
   border: none;
+  cursor: pointer;
   padding: 0 1em;
   line-height: 2.5em;
+  color: var(--white);
+  background-color: var(--gray-medium);
 }
 
 button:hover {
