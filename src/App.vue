@@ -23,7 +23,7 @@ const props = defineProps<{
 
 <style>
 #page {
-  padding: 48px;
+  padding: 3em;
   border-top: 4px solid var(--gray-medium);
 }
 </style>

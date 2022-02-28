@@ -33,7 +33,7 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
   <div id="app-menu">
 
     <router-link to="/" class="logo">
-      <LogoSvg width="auto" height="3rem" />
+      <LogoSvg width="auto" height="3em" />
     </router-link>
 
     <router-link v-for="portal in napConfig.portals" :to="`/${portal.path}`">
@@ -51,39 +51,36 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
 #app-menu {
   display: flex;
   align-items: flex-start;
-  padding: 48px 48px;
-  gap: 24px
+  padding: 3em;
+  gap: 1.5em;
 }
-
+a {
+  flex: 0 0 auto;
+}
+a.logo {
+  margin-right: 1.5em;
+}
 a:not(.logo) {
-  color: #ffffff;
-  background: #8D8B84;
-  padding: 7px;
-  border-radius: 0px;
+  color: var(--white);
+  background-color: var(--gray-medium);
+  padding: 0 1em;
+  line-height: 2.5em;
   white-space: nowrap;
   text-decoration: none;
 }
 a:not(.logo):hover {
-  background: #CDCDC3;
+  background-color: var(--gray-light);
 }
-
 a:not(.logo).router-link-active {
-  background: #2958FF;
+  background-color: var(--blue);
 }
-
-
-a.logo img {
-  height: 48px;
-  padding-right: 48px;
-}
-
 .status {
+  flex: 1 0 auto;
   text-align: right;
-  flex-grow: 1;
-  color: #FF5050;
-  padding-top: 7px;
+  color: var(--red);
+  line-height: 2.5em;
 }
 .status.connected {
-  color: #D6FFA3;
+  color: var(--green-vibrant);
 }
 </style>
