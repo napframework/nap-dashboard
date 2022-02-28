@@ -82,6 +82,6 @@ a:not(.logo).router-link-active {
   line-height: 2.5em;
 }
 .status.connected {
-  color: var(--green-vibrant);
+  color: var(--green-medium);
 }
 </style>

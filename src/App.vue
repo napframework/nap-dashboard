@@ -7,6 +7,7 @@ import './styles/fonts.css';
 import './styles/colors.css';
 import './styles/style.css';
 import './styles/table.css';
+import './styles/input.css';
 import './styles/button.css';
 
 // Local Includes
