@@ -9,6 +9,10 @@ td {
   vertical-align: center;
 }
 
+table table td {
+  padding-right: 1em;
+}
+
 td:last-child {
   padding-right: 0;
 }
