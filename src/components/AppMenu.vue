@@ -33,7 +33,7 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
   <div id="app-menu">
 
     <router-link to="/" class="logo">
-      <LogoSvg width="auto" height="3em" />
+      <LogoSvg height="3em" />
     </router-link>
 
     <router-link v-for="portal in napConfig.portals" :to="`/${portal.path}`">
@@ -58,6 +58,7 @@ a {
   flex: 0 0 auto;
 }
 a.logo {
+  width: auto;
   margin-right: 1.5em;
 }
 a:not(.logo) {
