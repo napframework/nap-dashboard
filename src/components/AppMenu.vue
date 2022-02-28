@@ -71,6 +71,7 @@ a:not(.logo) {
 a:not(.logo):hover {
   background-color: var(--gray-light);
 }
+a:not(.logo):active,
 a:not(.logo).router-link-active {
   background-color: var(--blue);
 }

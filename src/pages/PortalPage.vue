@@ -165,26 +165,6 @@ onBeforeUnmount(() => {
   background-color: #D6FFA3;
 }
 
-:deep(.PortalComponent button) {
-  color: #ffffff;
-  background: #8D8B84;
-  border-style: none;
-  padding: 6px;
-  margin: 3px 0px 3px 0px;
-  font-family: "manrope";
-  font-size: 1.0rem;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-:deep(.PortalComponent button):hover {
-  background: #2958FF;
-}
-
-:deep(.PortalComponent button):active {
-  background: #CDCDC3;
-}
-
 :deep(input[type="range"]) {
   -webkit-appearance: none;
   height: 12px;

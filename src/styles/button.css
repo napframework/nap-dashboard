@@ -1,0 +1,15 @@
+button {
+  color: var(--white);
+  background-color: var(--gray-medium);
+  border: none;
+  padding: 0 1em;
+  line-height: 2.5em;
+}
+
+button:hover {
+  background-color: var(--gray-light);
+}
+
+button:active {
+  background-color: var(--blue);
+}
