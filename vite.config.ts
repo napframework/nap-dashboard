@@ -5,7 +5,12 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   optimizeDeps: {
-    exclude: ['nap-portal'],
-    include: ['lodash', 'uuid'],
+    exclude: [
+      'nap-portal',
+    ],
+    include: [
+      'nap-portal > lodash',
+      'nap-portal > uuid',
+    ],
   },
 });
