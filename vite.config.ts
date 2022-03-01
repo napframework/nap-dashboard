@@ -6,7 +6,12 @@ import svgLoader from 'vite-svg-loader';
 export default defineConfig({
   plugins: [vue(), svgLoader()],
   optimizeDeps: {
-    exclude: ['nap-portal'],
-    include: ['lodash', 'uuid'],
+    exclude: [
+      'nap-portal',
+    ],
+    include: [
+      'nap-portal > lodash',
+      'nap-portal > uuid',
+    ],
   },
 });
