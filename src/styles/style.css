@@ -33,6 +33,6 @@ html {
 }
 
 ::selection {
-  background-color: var(--gray-medium);
   color: var(--black);
+  background-color: var(--gray-medium);
 }
