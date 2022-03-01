@@ -1,13 +1,12 @@
 /*
  * All inputs and textareas
  */
-
 input,
 textarea {
   display: block;
   border: none;
   outline: none;
-  margin: 0.25em 0;
+  margin: 0.275em 0;
   padding: 0.5em 0.75em;
   font-size: 0.8rem;
   color: var(--white);
@@ -73,7 +72,7 @@ input[type="range"] {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  width: 0.75em;
+  width: 0.4em;
   height: 1.5em;
   background: var(--white);
   -webkit-appearance: none;

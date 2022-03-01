@@ -19,4 +19,6 @@ td:last-child {
 
 table table td {
   padding-right: 1em;
+  font-size: 0.95rem;
+  font-weight: 300;
 }
