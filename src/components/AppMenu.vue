@@ -8,6 +8,7 @@ import {
 
 // Local Includes
 import napConfig from '../../nap.config';
+import LogoSvg from '../assets/logo.svg?component';
 
 // Define props
 const props = defineProps<{
@@ -32,7 +33,7 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
   <div id="app-menu">
 
     <router-link to="/" class="logo">
-      <img alt="NAP logo" src="../assets/logo.png" />
+      <LogoSvg height="3em" />
     </router-link>
 
     <router-link v-for="portal in napConfig.portals" :to="`/${portal.path}`">
@@ -50,31 +51,38 @@ props.napWebSocket.addEventListener(NAPWebSocketEvent.Close, {
 #app-menu {
   display: flex;
   align-items: flex-start;
-  padding: 32px 48px;
-  gap: 18px
+  padding: 3em;
+  gap: 1.5em;
+}
+a {
+  flex: 0 0 auto;
+}
+a.logo {
+  width: auto;
+  margin-right: 1.5em;
 }
 a:not(.logo) {
-  color: #ffffff;
-  padding: 12px;
-  border-radius: 18px;
-  border: 1px solid #ffffff;
+  color: var(--white);
+  background-color: var(--gray-medium);
+  padding: 0 1em;
+  line-height: 2.5em;
   white-space: nowrap;
   text-decoration: none;
 }
-a:not(.logo):hover,
-a:not(.logo).router-link-active {
-  color: #000000;
-  background: #ffffff;
+a:not(.logo):hover {
+  background-color: var(--gray-light);
 }
-a.logo img {
-  height: 64px;
+a:not(.logo):active,
+a:not(.logo).router-link-active {
+  background-color: var(--blue);
 }
 .status {
+  flex: 1 0 auto;
   text-align: right;
-  flex-grow: 1;
-  color: #ff0000;
+  color: var(--red);
+  line-height: 2.5em;
 }
 .status.connected {
-  color: #00ff00;
+  color: var(--green-medium);
 }
 </style>

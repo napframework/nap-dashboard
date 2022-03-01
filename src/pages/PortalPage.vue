@@ -71,26 +71,3 @@ onBeforeUnmount(() => {
 <template>
   <div ref="portal"></div>
 </template>
-
-<style scoped>
-:deep(table) {
-  white-space: nowrap;
-  border-spacing: 0;
-}
-:deep(td) {
-  height: 40px;
-  padding-right: 24px;
-}
-:deep(td:last-child) {
-  padding-right: 0;
-}
-:deep(textarea),
-:deep(input[type="text"]),
-:deep(input[type="range"]) {
-  width: 240px;
-}
-:deep(input[type="number"]),
-:deep(input[type="color"]) {
-  width: 80px;
-}
-</style>

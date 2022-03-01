@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Manrope VF';
+  src: url('/fonts/Manrope.woff2') format('woff2 supports variations'),
+       url('/fonts/Manrope.woff2') format('woff2-variations');
+  font-weight: 200 800;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-ExtraLight.ttf') format('ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Light.ttf') format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Medium.ttf') format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope-ExtraBold.ttf') format('ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/fonts/Inconsolata-Medium.ttf') format('ttf');
+  font-weight: 500;
+}

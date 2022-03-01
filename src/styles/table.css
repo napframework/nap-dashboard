@@ -1,0 +1,24 @@
+table {
+  white-space: nowrap;
+  border-spacing: 0;
+  border: none;
+}
+
+td {
+  padding-right: 1.5em;
+  vertical-align: center;
+}
+
+td:last-child {
+  padding-right: 0;
+}
+
+/*
+ * Nested tables
+ */
+
+table table td {
+  padding-right: 1em;
+  font-size: 0.95rem;
+  font-weight: 300;
+}

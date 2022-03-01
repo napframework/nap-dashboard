@@ -1,0 +1,18 @@
+button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin: 0.25em 0;
+  padding: 0 1em;
+  line-height: 2.5em;
+  color: var(--white);
+  background-color: var(--gray-medium);
+}
+
+button:hover {
+  background-color: var(--gray-light);
+}
+
+button:active {
+  background-color: var(--blue);
+}

@@ -2,6 +2,14 @@
 // External Includes
 import { NAPWebSocket } from 'nap-portal';
 
+// Global styles
+import './styles/fonts.css';
+import './styles/colors.css';
+import './styles/style.css';
+import './styles/table.css';
+import './styles/input.css';
+import './styles/button.css';
+
 // Local Includes
 import AppMenu from './components/AppMenu.vue';
 
@@ -17,18 +25,8 @@ const props = defineProps<{
 </template>
 
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  background: #000000;
-}
-#app {
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 #page {
-  padding: 48px;
+  padding: 3em;
+  border-top: 4px solid var(--gray-medium);
 }
 </style>
