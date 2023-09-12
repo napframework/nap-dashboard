@@ -15,10 +15,12 @@ import PortalPage from './pages/PortalPage.vue';
 // Create NAPWebSocket connection
 const napWebSocket = new NAPWebSocket(napConfig.socket);
 
-// Open NAPWebSocket connection
-napWebSocket.open()
-  .then(() => console.log('NAPWebSocket opened successfully'))
-  .catch(error => console.error(`NAPWebSocket failed to open: ${error.message}`));
+// Open NAPWebSocket connection if we don't open the connection using a login 
+if(!napConfig.layout.showLogin){
+  napWebSocket.open()
+    .then(() => console.log('NAPWebSocket opened successfully'))
+    .catch(error => console.error(`NAPWebSocket failed to open: ${error.message}`));
+}
 
 // Create Vue Router
 const router = createRouter({
@@ -27,6 +29,7 @@ const router = createRouter({
     {
       path: '/',
       component: HomePage,
+      props: { napWebSocket }
     },
     {
       path: '/:portal',
