@@ -9,7 +9,7 @@
     "portal"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "homepage": "https://github.com/napframework/nap-dashboard#readme",
   "bugs": {
@@ -27,7 +27,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "nap-portal": "^0.0.5",
+    "nap-portal": "^0.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"
   },
