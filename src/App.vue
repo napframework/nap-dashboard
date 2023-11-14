@@ -9,6 +9,7 @@ import './styles/style.css';
 import './styles/table.css';
 import './styles/input.css';
 import './styles/button.css';
+import './styles/select.css';
 
 // Local Includes
 import AppMenu from './components/AppMenu.vue';

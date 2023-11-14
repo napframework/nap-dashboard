@@ -24,6 +24,7 @@ Open the `nap.config.ts` file and adjust it to your configuration.
 | `portals[].id` | The ID of the portal component specified in the NAP application |
 | `portals[].name` | The name of the portal that will show in the web interface |
 | `portals[].path` | The path of the address route where this component will be available |
+| `layout.showLogin` | Whether to show a login screen or connect automatically using the user and pass as set in config | 
 
 ## Usage
 
