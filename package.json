@@ -27,6 +27,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "nap-portal": "^0.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"

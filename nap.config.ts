@@ -8,9 +8,14 @@ export default {
   },
   portals: [
     {
-      id: 'PortalComponent',
-      name: 'Portal Component',
-      path: 'portal-component',
+      id: 'ChoreographyControl',
+      name: 'Choreography Control',
+      path: 'choreography-control',
+    },
+    {
+      id: 'RobotStatus',
+      name: 'Robot Status',
+      path: 'robot-status' 
     }
   ],
   layout: {
