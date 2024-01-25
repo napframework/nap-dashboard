@@ -1,7 +1,8 @@
 table {
-  white-space: nowrap;
+  white-space: normal;
   border-spacing: 0;
   border: none;
+  max-width: 800px;
 }
 
 td {
