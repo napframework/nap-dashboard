@@ -1,24 +1,4 @@
-export default {
-  socket: {
-    host: 'localhost',
-    port: 2000,
-    user: 'napuser',
-    pass: 'letmein!',
-    secure: false,
-  },
-  portals: [
-    {
-      id: 'ChoreographyControl',
-      name: 'Choreography Control',
-      path: 'choreography-control',
-    },
-    {
-      id: 'RobotStatus',
-      name: 'Robot Status',
-      path: 'robot-status' 
-    }
-  ],
-  layout: {
-    showLogin : true
-  }
-};
+const res = await fetch('settings.json');
+const napConfig = await res.json();
+
+export default napConfig;

@@ -62,6 +62,7 @@ const onSubmit = () => {
       errorMessage.value = error.message;
     });
 };
+
 </script>
 
 <template>

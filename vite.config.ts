@@ -14,4 +14,7 @@ export default defineConfig({
       'nap-portal > uuid',
     ],
   },
+  build: {
+    target: 'esnext'
+  }
 });

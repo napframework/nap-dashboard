@@ -31,7 +31,7 @@ let napPortal: NAPPortal | null = null;
 
 // Set portal from router path
 function setPortal(path: string): boolean {
-  const portalConfig = napConfig.portals.find(p => p.path === path);
+  const portalConfig = napConfig.portals.find((p: { path: string; }) => p.path === path);
   if (!portalConfig)
     return false;
 
