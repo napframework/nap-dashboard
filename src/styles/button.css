@@ -20,3 +20,7 @@ button:active {
 button:disabled{
   background-color: var(--black);
 }
+
+button:highlight{
+  background-color: var(--green-medium);
+}

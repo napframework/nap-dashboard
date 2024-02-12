@@ -36,3 +36,9 @@ html {
   color: var(--black);
   background-color: var(--gray-medium);
 }
+
+.highlight{
+  background-color: var(--green-vibrant);
+  -webkit-text-fill-color: var(--gray-dark);
+}
+
