@@ -8,6 +8,7 @@ table {
 td {
   padding-right: 1.5em;
   vertical-align: center;
+  min-width: 300px;
 }
 
 td:last-child {
@@ -22,4 +23,12 @@ table table td {
   padding-right: 1em;
   font-size: 0.95rem;
   font-weight: 300;
+ 
 }
+
+tbody>tr>:nth-child(2){ 
+  display: inline-table;
+}
+
+
+

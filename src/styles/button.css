@@ -7,6 +7,7 @@ button {
   line-height: 2.5em;
   color: var(--white);
   background-color: var(--gray-medium);
+
 }
 
 button:hover {
