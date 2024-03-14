@@ -40,3 +40,51 @@ html {
 .selected{
   background-color: var(--blue);
 }
+
+/* The dialog (background) */
+dialog {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: fit-content; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: var(--gray-dark);
+  -webkit-text-fill-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: var(--gray-light);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+dialog::backdrop{
+  background-color: var(--black);
+  opacity: 0.6;
+}
+
+.dialog-buttons{
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.dialog-titlebar {
+  background-color: var(--gray-medium);
+  -webkit-text-fill-color: var(--green-vibrant);
+  text-align: center;
+  height: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  width: auto;
+  box-sizing: border-box;
+  position: absolute;
+  margin: -20px;
+  top: 20px;
+  width: 100%;
+}
+
+.dialog-content {
+  margin-top: 40px;
+}
